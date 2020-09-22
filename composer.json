@@ -1,0 +1,29 @@
+{
+    "name": "step/mvc",
+    "description": "MVC",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vadim",
+            "email": "vadim.212@inbox.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "league/route": "^4.5",
+        "laminas/laminas-diactoros": "^2.4",
+        "laminas/laminas-httphandlerrunner": "^1.2",
+        "filp/whoops": "^2.7",
+        "twig/twig": "^3.0",
+        "php-activerecord/php-activerecord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": ["./app", "./framework"]
+        },
+        "files": [
+            "framework/helpers.php"
+        ]
+    }
+}
